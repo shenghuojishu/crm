@@ -34,3 +34,7 @@ const SDK_USER_IDENTIFY   = 'user/Users/userIdentify';	//获取用户实名认�
 // pub_0.3
 const SDK_LOGIN_BY_TOKEN  = 'user/MemberInfo/loginByToken';	//通过token登录其他系统
 const SDK_REAL_NAME_INFO = 'user/Users/userIdentify';    //获取用户实名认证信息
+
+//v_0.7
+const SDK_ADD_BALANCE_TRANSFERS = 'user/Users/balanceTransfers';	//余额互转
+const SDK_ADMIN_WALLET          = 'user/Users/getWallets';	//后台获取钱包余额
