@@ -1,5 +1,5 @@
 <?php
-namespace Shenghuo\request;
+namespace Shenghuojishu\request;
 
 /**
  * author:czk
