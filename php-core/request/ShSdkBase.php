@@ -1,5 +1,5 @@
 <?php
-namespace Shenghuo\request;
+namespace Crm\request;
 /**
  * author:czk
  * time:2019-06-18
