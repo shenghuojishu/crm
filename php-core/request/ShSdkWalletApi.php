@@ -6,7 +6,7 @@ namespace Shenghuojishu\request;
  * time:2019-06-18
  */
 use think\Model;
-use Shenghuo\request\ShSdkValidate;
+use Shenghuojishu\request\ShSdkValidate;
 class ShSdkWalletApi extends ShSdkUserApi
 {
 	public function __construct()
