@@ -21,7 +21,8 @@ class ShSdkBase
         // $this->appSecret  = $config['app_secret'];
         // $this->privateKey = $config['private_key'];
         // $this->publicKey  = $config['public_key'];
-
+           
+        
         $this->appId      = CRM_APP_ID;
         $this->appSecret  = CRM_APP_SECRET;
         $this->privateKey = CRM_PRIVATE_KEY;
@@ -35,14 +36,27 @@ class ShSdkBase
     }
 
     public function setDataAppid(){
-        $this->values['app_id'] = $this->appId;
+        //获取传入系统的appid的相关信息
+        if(!empty($this->values['appid'])){
+            $this->values['app_id'] = $this->values['appid'];
+            unset($this->values['appid']);
+        }else{
+            $this->values['app_id'] = $this->appId;
+        }
         $this->values['channelCode'] = $this->channelCode;
     }
 
     public function setDataSign(){
         $this->values['sign'] = $this->MakeSign();
     }
-
+    public function setAppSecret(){
+        if(!empty($this->values['app_secret'])){
+            $this->appSecret = $this->values['app_secret'];
+            unset($this->values['app_secret']);
+        }else{
+            $this->appSecret = $this->appSecret;
+        }
+    }
     /**
      * 加密
      */
