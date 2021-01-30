@@ -11,13 +11,7 @@ function sdkAjaxApiReturn($code=SUCCESS,$data=[],$msg='',$time=""){
     exit;
 }
 
-/**
- * 测试一下
- */
 
- function sdk_test(){
-     echo 1;
- }
 
 /**
  * 检查手机号码格式
